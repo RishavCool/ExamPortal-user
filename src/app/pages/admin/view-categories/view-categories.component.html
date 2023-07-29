@@ -1,0 +1,38 @@
+<div *ngFor="let c of categories">
+  <div class="card mb-3">
+    <h5 class="card-header">Category</h5>
+    <div class="card-body">
+      <h3 class="card-title">{{ c.title }}</h3>
+      <h5>
+        <p class="card-text mb-4">
+          {{ c.description }}
+        </p>
+      </h5>
+      <a
+        class="btn text-white btn-lg btn-floating"
+        style="background-color: #ffa962"
+        href="#!"
+        role="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-trash-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<a
+  class="btn btn-outline-danger btn-lg d-grid gap-2 mb-2"
+  routerLink="/admin/add-category"
+  ><strong>Add New Category</strong></a
+>

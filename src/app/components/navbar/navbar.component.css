@@ -1,0 +1,33 @@
+.navbar-brand {
+    font-family: Samarkan;
+    font-size: 25pt;
+    z-index: 10;
+}
+
+.navbar-collapse {
+    flex: 1 1 auto;
+    z-index: 10;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0px;
+    z-index: 10;
+}
+
+.nofixed {
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+    z-index: 10;
+}
+
+.container-fluid {
+    z-index: 10;
+}
+
+.navbg {
+    background-image: linear-gradient(#bbbbbb, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #bbbbbb);
+}

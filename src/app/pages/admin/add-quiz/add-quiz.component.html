@@ -1,0 +1,62 @@
+<div class="row d-flex justify-content-center align-items-center">
+  <div class="card w-75 mb-3">
+    <div class="card-body">
+      <h3 class="card-title mb-3">Add Quiz</h3>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label"
+            ><h5>Quiz Title</h5></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Quiz Title"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label"><h5>Maximum Marks</h5></label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Max. Marks"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label"><h5>Number of Questions</h5></label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="No. of Questions"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label"><h5>Category</h5></label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>None</option>
+            <option *ngFor="let c of categories" [value]="c.cid">
+              {{ c.title }}
+            </option>
+          </select>
+        </div>
+      </form>
+
+      <div class="mb-3 mt-2">
+        <label class="form-label mb-2"><h5>Description</h5></label>
+        <textarea class="form-control" rows="3" required></textarea>
+      </div>
+      <div class="form-check form-switch mb-3">
+        <input class="form-check-input" type="checkbox" role="switch" />
+        <label class="form-check-label"><h5>Publish</h5></label>
+      </div>
+      <a
+        class="btn btn-lg text-white"
+        style="background-color: #ffa962"
+        type="submit"
+        ><strong> Add </strong></a
+      >
+    </div>
+  </div>
+</div>

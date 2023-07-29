@@ -1,0 +1,65 @@
+.background {
+    background-color: #e6e6e6;
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    border-radius: 1rem;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 10px #9f9f9f;
+    text-shadow: 3px 3px 5px #cacaca;
+    background-image: linear-gradient(to bottom right, #ffffff, #eaeaea);
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px #9f9f9f;
+    text-shadow: 1px 1px 5px #cacaca;
+    background-image: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+    animation-name: cardAnim;
+    animation-duration: .1s;
+}
+
+@keyframes cardAnim {
+    from {
+        box-shadow: 5px 5px 10px #9f9f9f;
+        text-shadow: 3px 3px 5px #cacaca;
+    }
+
+    to {
+        box-shadow: 1px 1px 5px #9f9f9f;
+        text-shadow: 1px 1px 5px #cacaca;
+    }
+}
+
+.card::content {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.cardBorder {
+    width: auto;
+    height: auto;
+}
+
+.cardBorder::content {
+    padding-left: 65px;
+    padding-top: 65px;
+}
+
+
+
+.startBtn {
+    width: 220px;
+    height: 50px;
+    border-radius: 2rem;
+    font-size: 15pt;
+    box-shadow: 5px 5px 10px #cacaca;
+    text-shadow: 0px 0px 1px #393939;
+    background-image: linear-gradient(#ffffff, #cacaca);
+}
+
+.startBtn:hover {
+    background-image: linear-gradient(#ebebeb, #ababab);
+}

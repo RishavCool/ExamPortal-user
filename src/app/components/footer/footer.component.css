@@ -1,0 +1,248 @@
+/*Footer*/
+footer
+{
+  background-color:black;
+  padding:36px;
+}
+
+footer h4
+{
+  color:whitesmoke;
+  font-size:20px;
+}
+
+footer a
+{
+  text-decoration:none;
+  color:white;
+}
+
+footer a:hover
+{
+  text-decoration:none;
+  color:#f39d1a;
+}
+
+footer ul
+{
+  list-style:none;
+  margin-top:16px;
+  text-decoration:none;
+  color:white;
+}
+
+footer ul li
+{
+  margin:12px 8px;
+  text-decoration:none;
+}
+
+footer .footer-container
+{
+  display:flex;
+}
+
+footer .footer-links
+{
+  width:33%;
+  padding-right:10%;
+  padding-left:10%;
+  border-right:1px solid whitesmoke;
+  font-size:15px;
+}
+
+footer .footer-icons
+{
+  width:33%;
+  text-align:center;
+  border-right:1px solid whitesmoke;
+  font-size:15px;
+}
+
+footer .footer-icons .social-icons
+{
+  margin-top:16px;
+}
+
+footer .footer-icons .social-icons i
+{
+  margin:0 8px;
+  font-size:20px;
+}
+
+footer .footer-icons .social-icons .insta-icon:hover
+{
+  color:#cd486b;
+  transition:all 0.3s ease;
+}
+
+footer .footer-icons .social-icons .facebook-icon:hover
+{
+  color:#4267B2;
+  transition:all 0.3s ease;
+}
+
+footer .footer-icons .social-icons .linkedin-icon:hover
+{
+  color:#0e76a8;
+  transition:all 0.3s ease;
+}
+
+footer .footer-contact
+{
+  width:33%;
+  padding-left:10%;
+  font-size:16px;
+}
+
+footer .footer-contact i
+{
+  font-size:18px;
+  padding-right:4%;
+}
+
+footer .footer-contact:hover  i.fa-map-marker
+{
+  color:red;
+  transition:all 0.9s ease;
+}
+
+footer .footer-contact:hover i.fa-phone
+{
+  color:green;
+  transition:all 0.9s ease;
+}
+
+footer .footer-contact:hover i.fa-envelope-o
+{
+  color:gold;
+  transition:all 0.9s ease;
+}
+
+footer .footer-copyright
+{
+  font-size:16px;
+  color:whitesmoke;
+  width:100%;
+  text-align:center;
+}
+/*Footer Ends*/
+
+/*Responsiveness*/
+@media screen and (max-width: 1100px)
+{
+  #navElements
+  {
+    display:none;
+    float:none;
+    text-align:center;
+  }
+
+  .active
+  {
+    border:none;
+  }
+
+  .input
+  {
+    margin-bottom:30px;
+  }
+
+  .header
+  {
+    background:white;
+  }
+
+  .header ul li
+  {
+    display:block;
+  }
+
+  .header a
+  {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .hamburger-icon
+  {
+    display:block;
+    position:absolute;
+    right:0;
+    top:0;
+    margin-top:12px;
+    margin-right:25px;
+    color:black;
+  }
+  footer .footer-contact
+  {
+    padding-left:0;
+    margin-left:0;
+  }
+  footer .footer-contact h4
+  {
+    text-align:center;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  footer .footer-container
+  {
+    display:block;
+  }
+  footer .footer-links
+  {
+    width:100%;
+    padding:5%;
+    text-align:center;
+    border:none;
+  }
+  footer .footer-icons
+  {
+    width:100%;
+    padding:5%;
+    text-align:center;
+    border:none;
+  }
+  footer .footer-icons .social-icons .insta-icon
+  {
+    color:#cd486b;
+  }
+
+  footer .footer-icons .social-icons .facebook-icon
+  {
+    color:#4267B2;
+  }
+
+  footer .footer-icons .social-icons .linkedin-icon
+  {
+    color:#0e76a8;
+  }
+  footer .footer-contact
+  {
+    width:100%;
+    padding:5%;
+    text-align:center;
+  }
+  footer .footer-copyright
+  {
+    color:steelblue;
+  }
+  footer .footer-contact i.fa-map-marker
+  {
+    color:red;
+  }
+
+  footer .footer-contact i.fa-phone
+  {
+    color:green;
+  }
+
+  footer .footer-contact i.fa-envelope-o
+  {
+    color:gold;
+  }
+}

@@ -1,0 +1,98 @@
+.hero-text[_ngcontent-d2c-frontend-c133] h1[_ngcontent-d2c-frontend-c133] {
+    color: #1c4980;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 44px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.hero-text[_ngcontent-d2c-frontend-c133] p[_ngcontent-d2c-frontend-c133] {
+    color: #1c4980;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.hero_grid[_ngcontent-d2c-frontend-c133] {
+    max-width: 546px;
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-site-expo .ebox .ebox-head .rcthumb {
+    width: 138px;
+    height: 138px;
+    font-size: 63px;
+    color: var(--white);
+    line-height: 138px;
+    background: var(--color_secondary);
+    text-align: center;
+    border-radius: 69px;
+    box-shadow: 0 5px 0 0 var(--color_silver_86_approx);
+    margin: 0 auto 5px;
+}
+
+/* @media (max-width: 767px)
+<style>
+.section-hero[_ngcontent-d2c-frontend-c152] .hero-mobile[_ngcontent-d2c-frontend-c152] img[_ngcontent-d2c-frontend-c152] {
+    width: 120%;
+}
+
+img[_ngcontent-d2c-frontend-c152] {
+    max-width: 100%;
+    height: auto;
+}
+{
+    box-sizing: inherit;
+}
+{
+    outline: 0;
+} */
+
+.home22-intro-title{
+    font-family: fantasy;text-align:"center";
+    font-size: 32px;
+    line-height: 1.2;
+    color: #1F1F20;
+    font-weight:normal;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .ebox-head{
+    display: flex;
+  }
+
+  .rcthumb{
+    position: absolute;
+    
+    padding-left: 60px;
+    padding-top: 25px;
+  }
+
+  .ebox-body{
+    margin-left: 50px;
+    color: black;
+  }
+
+  a:link {
+    color: rgb(9, 9, 9);
+    background-color: transparent;
+    text-decoration: none;
+  }  

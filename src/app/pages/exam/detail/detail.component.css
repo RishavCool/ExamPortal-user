@@ -1,0 +1,26 @@
+.background{
+    background-color: #e6e6e6;
+    height: 90vh;
+    width: 100%;
+
+    padding-left: 10%;
+    padding-top: 20px;
+}
+.pdng[_ngcontent-d2c-frontend-c217] {
+    padding: 30px 40px;
+    
+    border-radius: 2rem;
+    background: #fff;
+    width: 90%;
+}
+
+.launchBtn{
+    background-color: #0a0;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 1rem;
+    height: 40px;
+    width: 200px;
+    
+}
+

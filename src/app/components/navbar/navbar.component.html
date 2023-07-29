@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbg" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'"> 
+  <div class="container-fluid">
+    <a [routerLink]="'/'" class="navbar-brand" href="">
+      <img src="assets/Image/Plogo.png" width="50px" height="50px"> <strong>ARIKSHA</strong>
+      </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a [routerLink]="'/'" class="nav-link" href="#home"><strong>Home</strong></a
+          >
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="'/upcoming-event'" class="nav-link" href="#Upcoming-Event"><strong>Upcoming Event</strong></a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="'/practice'" class="nav-link" href="#Practice"><strong>Practice</strong></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a [routerLink]="'/'" class="nav-link" href="#Search"><strong>Search</strong></a>
+        </li> -->
+      </ul>
+
+      
+      
+      <form class="d-flex" *ngIf="!user.isLogined">
+        <a
+          [routerLink]="'/login'"
+          class="btn btn-outline-success me-2"
+          type="submit"
+        >
+          <strong>Log In</strong>
+        </a>
+        <a
+          [routerLink]="'/signup'"
+          class="btn btn-outline-success"
+          type="submit"
+          ><strong>Sign Up</strong></a
+        >
+      </form>
+
+      <a href="#" routerLink="/user" class=" nav-link dropdown-toggle" *ngIf="user.isLogined">
+        <svg height="50" width="50">
+          <circle cx="25" cy="25" r="20" fill="green" />
+          <text x="20" y="30"  fill="white">{{user.nameInitial}}</text>
+        </svg> 
+        {{user.firstName}}
+      </a>
+    </div>
+  </div>
+</nav>

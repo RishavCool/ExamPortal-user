@@ -1,0 +1,21 @@
+<div class="bootstrap-wrapper">
+  <div class="container-fluid">
+    <div class="row" style="background-color: #f4f5f7">
+      <div class="col-md-2 vh-100 align-items-center gradient-custom">
+        <!-- <a href="#" class="btn btn-secondary btn-lg d-grid gap-2 mb-2 mt-5"
+          >Home</a
+        >
+        <a href="#" class="btn btn-secondary btn-lg d-grid gap-2 mb-2"
+          >Profile</a
+        > -->
+        <app-sidebar></app-sidebar>
+      </div>
+      <!-- <div class="col-md-1" style="background-color: #f4f5f7"></div> -->
+      <div class="col-md-10 mt-5" style="background-color: #f4f5f7">
+        <div>
+          <h3 class="align-items-center"><router-outlet></router-outlet></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

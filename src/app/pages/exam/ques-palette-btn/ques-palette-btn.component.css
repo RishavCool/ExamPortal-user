@@ -1,0 +1,9 @@
+.btn{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    box-shadow: 2px 2px 5px #9f9f9f;
+    text-shadow: 1px 1px 3px #b1b1b1;
+}

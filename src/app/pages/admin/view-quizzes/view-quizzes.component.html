@@ -1,0 +1,40 @@
+<div *ngFor="let q of quizzes">
+  <div class="card mb-3">
+    <div class="card-header">{{ q.title }}</div>
+    <div class="card-body">
+      <h4 class="card-title mb-2">{{ q.category.title }}</h4>
+      <h6>
+        <p class="card-text mb-2">{{ q.description }}</p>
+      </h6>
+      <a class="btn btn-outline-info" type="submit"
+        ><strong> Max Marks: {{ q.maxMarks }}</strong></a
+      >
+      <a class="btn btn-outline-success ms-2" type="submit"
+        ><strong> Total Questions: {{ q.numberOfQuestions }} </strong></a
+      >
+      <a class="btn btn-outline-warning ms-2" type="submit"
+        ><strong> Attempts: </strong></a
+      >
+    </div>
+    <div class="card-footer text-body-secondary">
+      <a
+        class="btn btn-lg text-white"
+        style="background-color: #ffa962"
+        type="submit"
+        ><strong> Update Questions </strong></a
+      >
+      <a
+        class="btn btn-lg text-white ms-2"
+        style="background-color: #ffa962"
+        type="submit"
+        ><strong>View Questions</strong></a
+      >
+    </div>
+  </div>
+</div>
+
+<a
+  class="btn btn-outline-danger btn-lg d-grid gap-2 mb-2 mt-2"
+  routerLink="/admin/add-quiz"
+  ><strong>Add New Quizzes</strong></a
+>
